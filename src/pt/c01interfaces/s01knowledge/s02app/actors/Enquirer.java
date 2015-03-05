@@ -30,7 +30,6 @@ public class Enquirer implements IEnquirer
         resps_adq = new HashMap<String, String>();
 
         boolean acertei = false;
-
         /*for(int i = 0; i < animais.length; i++){
             System.out.println(animais[i]);
         }*/
@@ -46,8 +45,13 @@ public class Enquirer implements IEnquirer
             while (decl != null && animalEsperado) {
                 String pergunta = decl.getPropriedade();
                 String respostaEsperada = decl.getValor();
-
-                String resposta = responder.ask(pergunta);
+                String resposta;
+                if(resps_adq.containsKey(pergunta)){
+                    resposta = resps_adq.get(pergunta);
+                }else{
+                    resposta = responder.ask(pergunta);
+                    resps_adq.put(pergunta, resposta);
+                }
                 if (resposta.equalsIgnoreCase(respostaEsperada))
                     decl = obj.proxima();
                 else
