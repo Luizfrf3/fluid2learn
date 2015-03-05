@@ -20,9 +20,9 @@ public class Enquirer implements IEnquirer
 	public void connect(IResponder responder)
 	{
         IBaseConhecimento bc = new BaseConhecimento();
-		
+        /* Recupera o arquivo txt do objeto */
 		obj = bc.recuperaObjeto("tiranossauro");
-
+		/* Pega a pergunta */
 		IDeclaracao decl = obj.primeira();
 		
         boolean animalEsperado = true;
