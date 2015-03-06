@@ -17,7 +17,12 @@ public class Enquirer implements IEnquirer
 	{
 	}
 	
-	
+	/*
+	* Trabalho: Etapa 1
+	*          Lucas Alves Racoci          | RA: 156331 | Turma B
+	*                                      |            |
+	 *  Luiz Fernando Rodrigues da Fonseca | RA: 156475 | Turma A
+	*/
 	@Override
 	public void connect(IResponder responder)
 	{
@@ -30,10 +35,7 @@ public class Enquirer implements IEnquirer
         resps_adq = new HashMap<String, String>();
 
         boolean acertei = false;
-        /*for(int i = 0; i < animais.length; i++){
-            System.out.println(animais[i]);
-        }*/
-       /* Testar todos os animais */
+       /* Testar todos os animais até acertar */
 		for(int i = 0; i < animais.length && !acertei; i++) {
             /* Recupera o arquivo txt do objeto */
             obj = bc.recuperaObjeto(animais[i]);
@@ -42,6 +44,7 @@ public class Enquirer implements IEnquirer
             IDeclaracao decl = obj.primeira();
 
             boolean animalEsperado = true;
+
             while (decl != null && animalEsperado) {
                 String pergunta = decl.getPropriedade();
                 String respostaEsperada = decl.getValor();
