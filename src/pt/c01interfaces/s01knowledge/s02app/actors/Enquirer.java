@@ -35,8 +35,8 @@ public class Enquirer implements IEnquirer
         resps_adq = new HashMap<String, String>();
 
         boolean acertei = false;
-       /* Testar todos os animais até acertar */
-		for(int i = 0; i < animais.length && !acertei; i++) {
+        /* Testar todos os animais até acertar */
+		for (int i = 0; i < animais.length && !acertei; i++) {
             /* Recupera o arquivo txt do objeto */
             obj = bc.recuperaObjeto(animais[i]);
 
@@ -45,13 +45,18 @@ public class Enquirer implements IEnquirer
 
             boolean animalEsperado = true;
 
+            /* Pega cada pergunta e a resposta de cada animal, checa se ela
+             * ja foi perguntada anteriormente no hash e chama ou nao o
+             * programa Responder; depois compara com a resposta esperada
+             * e pula para o proximo animal caso nao for a esperada
+             */
             while (decl != null && animalEsperado) {
                 String pergunta = decl.getPropriedade();
                 String respostaEsperada = decl.getValor();
                 String resposta;
-                if(resps_adq.containsKey(pergunta)){
+                if (resps_adq.containsKey(pergunta)) {
                     resposta = resps_adq.get(pergunta);
-                }else{
+                } else {
                     resposta = responder.ask(pergunta);
                     resps_adq.put(pergunta, resposta);
                 }
@@ -60,9 +65,10 @@ public class Enquirer implements IEnquirer
                 else
                     animalEsperado = false;
             }
-           if(animalEsperado) {
-               acertei = responder.finalAnswer(animais[i]);
-           }
+            /* Se acertou o animal chama a resposta final */
+            if (animalEsperado) {
+                acertei = responder.finalAnswer(animais[i]);
+            }
         }
 		
 		if (acertei)

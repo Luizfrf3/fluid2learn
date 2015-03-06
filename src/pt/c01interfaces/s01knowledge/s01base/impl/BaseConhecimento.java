@@ -12,7 +12,7 @@ import pt.c01interfaces.s01knowledge.s01base.inter.IObjetoConhecimento;
 
 public class BaseConhecimento implements IBaseConhecimento
 {
-	public static final String DIRETORIO_RAIZ = "/home/racoci/IdeaProjects" +
+	public static final String DIRETORIO_RAIZ = "/Users/luizfrf/git" +
             "/fluid2learn/bin/pt/c01interfaces/s01knowledge/s02app/bd/",
 	                           EXTENSAO = ".txt";
 	
