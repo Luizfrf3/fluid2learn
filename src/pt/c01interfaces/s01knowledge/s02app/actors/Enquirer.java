@@ -19,9 +19,9 @@ public class Enquirer implements IEnquirer
 	
 	/*
 	* Trabalho: Etapa 1
-	*          Lucas Alves Racoci          | RA: 156331 | Turma B
-	*                                      |            |
-	 *  Luiz Fernando Rodrigues da Fonseca | RA: 156475 | Turma A
+	*          Lucas Alves Racoci         | RA: 156331 | Turma B
+	*                                     |            |
+	*  Luiz Fernando Rodrigues da Fonseca | RA: 156475 | Turma A
 	*/
 	@Override
 	public void connect(IResponder responder)
