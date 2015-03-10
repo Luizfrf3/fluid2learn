@@ -26,12 +26,17 @@ public class EnquirerMaze implements IEnquirer {
 		                System.out.println("  Resposta: " + resposta);
 		                break;
 		      case "M": boolean moveu = responder.move(pc);
-		                System.out.println((moveu)?"  Movimento executado!":"N�o � poss�vel mover");
+		                System.out.println((moveu)?"  Movimento executado!":"Não é possível mover");
 		                break;
 		   }
 			System.out.print("(P)ergunta, (M)ovimento ou (F)im? ");
 			tipo = scanner.nextLine();
 		}
+		
+		if (responder.finalAnswer("cheguei"))
+			System.out.println("Você encontrou a saida!");
+		else
+			System.out.println("Fuém fuém fuém!");
 		
 		scanner.close();
 		
