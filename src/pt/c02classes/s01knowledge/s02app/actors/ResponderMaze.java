@@ -13,9 +13,11 @@ public class ResponderMaze implements IResponder {
     private char mazeMatrix[];
 	private int nLinhas = 0, nColunas = 0;
 	private int linhaAtual = 0, colunaAtual = 0;
+    IStatistics estat;
 	
 	public ResponderMaze(IStatistics estatisticas, String maze) {
 		IBaseConhecimento bc = new BaseConhecimento();
+        this.estat = estatisticas;
         bc.setScenario("maze");
 		
 		this.obj = bc.recuperaObjeto(maze);
@@ -51,12 +53,19 @@ public class ResponderMaze implements IResponder {
 		int novaLinha = linhaAtual,
 			novaColuna = colunaAtual;
 		switch (question) {
-			case "norte": novaLinha--; break;
-			case "sul":   novaLinha++; break;
-			case "leste": novaColuna++; break;
-			case "oeste": novaColuna--; break;
-			case "aqui": break;
-			default: resposta = "nao sei";
+            case "norte":case "cima":case "pra cima":case "alto":case "pro alto":case "para cima":case "c":
+            case"n":case "sobe":case "^":case"^^":case "^^^":case"+y":
+                novaLinha--; break;
+            case"sul":case"baixo":case"pra baixo":case"desce":case"cai":case"v":case"vv":case"vvv":case"-y":
+                novaLinha++; break;
+            case"leste":case"direita":case"right":case"pro lado certo":case">":case">>":case">>>":case"+x":
+                novaColuna++; break;
+            case"oeste":case"esquerda":case"left":case"pro lado errado":case"<":case"<<": case"<<<":case"-x":
+                novaColuna--; break;
+			case "aqui":
+                break;
+			default:
+                resposta = "nao sei";
 		}
 		
 		if (resposta == null) {
@@ -80,16 +89,28 @@ public class ResponderMaze implements IResponder {
 		boolean movimento = true;
 		int novaLinha = linhaAtual,
 			novaColuna = colunaAtual;
-		switch (direction) {
-			case "norte": novaLinha--; break;
-			case "sul":   novaLinha++; break;
-			case "leste": novaColuna++; break;
-			case "oeste": novaColuna--; break;
-		}
+        switch (direction) {
+            case "norte":case "cima":case "pra cima":case "alto":case "pro alto":case "para cima":case "c":
+            case"n":case "sobe":case "^":case"^^":case "^^^":case"+y":
+                novaLinha--;
+                break;
+            case"sul":case"baixo":case"pra baixo":case"desce":case"cai":case"v":case"vv":case"vvv":case"-y":
+                novaLinha++;
+                break;
+            case"leste":case"direita":case"right":case"pro lado certo":case">":case">>":case">>>":case"+x":
+                novaColuna++;
+                break;
+            case"oeste":case"esquerda":case"left":case"pro lado errado":case"<":case"<<": case"<<<":
+                novaColuna--;
+                break;
+            default:
+                return false;
+        }
 		if (novaLinha < 0 || novaLinha >= nLinhas ||
 			novaColuna < 0 || novaColuna >= nColunas ||
-			mazeMatrix[novaLinha*nColunas+novaColuna] == '#')
-			movimento = false;
+			mazeMatrix[novaLinha*nColunas+novaColuna] == '#') {
+            movimento = false;
+        }
 		else {
 			linhaAtual = novaLinha;
 			colunaAtual = novaColuna;
