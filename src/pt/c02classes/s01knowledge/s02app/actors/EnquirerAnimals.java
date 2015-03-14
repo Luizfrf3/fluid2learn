@@ -6,8 +6,7 @@ import pt.c02classes.s01knowledge.s01base.inter.IDeclaracao;
 import pt.c02classes.s01knowledge.s01base.inter.IEnquirer;
 import pt.c02classes.s01knowledge.s01base.inter.IObjetoConhecimento;
 import pt.c02classes.s01knowledge.s01base.inter.IResponder;
-import java.util.Map;
-import java.util.HashMap;
+import java.util.*;
 
 public class EnquirerAnimals implements IEnquirer {
 
@@ -26,8 +25,8 @@ public class EnquirerAnimals implements IEnquirer {
 		String[] animais;
         animais = bc.listaNomes();
 
-        HashMap<String, String> resps_adq;
-        resps_adq = new HashMap<String, String>();
+        Hashtable<String, String> resps_adq;
+        resps_adq = new Hashtable<String, String>();
 
         boolean acertei = false;
         /* Testar todos os animais até acertar */
