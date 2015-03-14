@@ -24,6 +24,55 @@ public class EnquirerMaze implements IEnquirer {
             responder.move(dir[generator.nextInt(4)]);
         }
     }
+    
+    private void metodoMenos() {
+    	HashMap<String, Integer> map = new HashMap<>();
+        Stack<Posicao> caminho = new Stack<Posicao>();
+        
+        Posicao atual = new Posicao(0,0);
+        
+        map.put(String.format("(%d, %d)", atual.x, atual.y), 1);
+        
+        System.out.println(responder.ask("aqui"));
+        
+        while (!responder.ask("aqui").equalsIgnoreCase("saida")) {
+        	if ((responder.ask("norte").equalsIgnoreCase("passagem") &&
+        		!map.containsKey(String.format("(%d, %d)", atual.x, atual.y + 1))) ||
+        		responder.ask("norte").equalsIgnoreCase("saida")) {
+        		responder.move("norte");
+        		atual.y++;
+        		System.out.println("1 " + atual.y);
+        		map.put(String.format("(%d, %d)", atual.x, atual.y), 1);
+        	}
+        	if ((responder.ask("leste").equalsIgnoreCase("passagem") &&
+        		!map.containsKey(String.format("(%d, %d)", atual.x + 1, atual.y))) ||
+        		responder.ask("leste").equalsIgnoreCase("saida")) {
+            	responder.move("leste");
+            	atual.x++;
+            	System.out.println("1 " + atual.x);
+            	map.put(String.format("(%d, %d)", atual.x, atual.y), 1);
+            }
+        	if ((responder.ask("sul").equalsIgnoreCase("passagem") &&
+            	!map.containsKey(String.format("(%d, %d)", atual.x, atual.y - 1))) ||
+            	responder.ask("sul").equalsIgnoreCase("saida")) {
+            	responder.move("sul");
+            	atual.y--;
+            	System.out.println("1 " + atual.y);
+            	map.put(String.format("(%d, %d)", atual.x, atual.y), 1);
+            }
+            if ((responder.ask("oeste").equalsIgnoreCase("passagem") &&
+            	!map.containsKey(String.format("(%d, %d)", atual.x - 1, atual.y))) ||
+            	responder.ask("oeste").equalsIgnoreCase("saida")) {
+               	responder.move("oeste");
+               	atual.x--;
+               	System.out.println("1 " + atual.x);
+               	map.put(String.format("(%d, %d)", atual.x, atual.y), 1);
+            }
+        	
+        }
+        
+    }
+    
     private boolean metodoInteligente(){
         HashMap<String, Integer> map = new HashMap<>();
         Stack<Posicao> caminho = new Stack<>();
@@ -99,7 +148,7 @@ public class EnquirerMaze implements IEnquirer {
     }
 
     public boolean discover() {
-        Boolean saida = metodoInteligente();
+        /*Boolean saida = */metodoMenos();
 
         if (responder.finalAnswer("cheguei"))
             System.out.println("Você encontrou a saida!");
@@ -108,7 +157,7 @@ public class EnquirerMaze implements IEnquirer {
 		
 		/*scanner.close();*/
 
-        return saida;
+        return /*saida*/true;
     }
 
 }
