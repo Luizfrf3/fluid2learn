@@ -10,11 +10,13 @@ import pt.c02classes.s01knowledge.s02app.actors.ResponderAnimals;
 
 import java.util.Scanner;
 
-public class OrchestratorGeral {
-	/* Implementar um programa para funcionar com os dois jogos;
-	 * ele pede por terminal o nome do jogo e o nome do animal
-	 * ou do labirinto para realizar o jogo
-	 */
+public class OrquestratorInit {
+	/*
+	* Trabalho: Etapa 2
+	*          Lucas Alves Racoci         | RA: 156331 | Turma B
+	*                                     |            |
+	*  Luiz Fernando Rodrigues da Fonseca | RA: 156475 | Turma A
+	*/
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 
@@ -28,18 +30,17 @@ public class OrchestratorGeral {
 			switch (jogo.toUpperCase()) {
 				case "A":
 					BaseConhecimento base = new BaseConhecimento();
-
 					base.setScenario("animals");
-					String listaAnimais[] = base.listaNomes();
-					for (String listaAnimal : listaAnimais) {
-						System.out.println("Enquirer com " + listaAnimal + "...");
-						stat = new Statistics();
-						resp = new ResponderAnimals(stat, listaAnimal);
-						enq = new EnquirerAnimals();
-						enq.connect(resp);
-						enq.discover();
-						System.out.println("----------------------------------------------------------------------------------------\n");
-					}
+					System.out.println("Escolha o animal: ");
+					System.out.print("--> ");
+					String Animal = teclado.nextLine();
+					System.out.println("Enquirer com " + Animal + "...");
+					stat = new Statistics();
+					resp = new ResponderAnimals(stat, Animal);
+					enq = new EnquirerAnimals();
+					enq.connect(resp);
+					enq.discover();
+					System.out.println("----------------------------------------------------------------------------------------\n");
 					break;
 				case "M":
 					System.out.println("Escolha o Labirinto: ");
