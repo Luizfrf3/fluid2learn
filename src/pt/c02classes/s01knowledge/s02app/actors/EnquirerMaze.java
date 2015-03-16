@@ -83,6 +83,11 @@ public class EnquirerMaze implements IEnquirer {
         	
         }
         
+        /* Libera a pilha */
+        while (!caminho.empty()) {
+        	caminho.pop();
+        }
+        
     }
 
     public boolean discover() {
