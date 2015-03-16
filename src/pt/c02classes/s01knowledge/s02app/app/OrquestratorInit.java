@@ -34,10 +34,10 @@ public class OrquestratorInit {
 					base.setScenario("animals");
 					System.out.println("Escolha o animal: ");
 					System.out.print("--> ");
-					String Animal = teclado.nextLine();
-					System.out.println("Enquirer com " + Animal + "...");
+					String animal = teclado.nextLine();
+					System.out.println("Enquirer com " + animal + "...");
 					stat = new Statistics();
-					resp = new ResponderAnimals(stat, Animal);
+					resp = new ResponderAnimals(stat, animal);
 					enq = new EnquirerAnimals();
 					enq.connect(resp);
 					enq.discover();
