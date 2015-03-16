@@ -8,9 +8,7 @@ import pt.c02classes.s01knowledge.s01base.inter.IResponder;
 public class EnquirerMaze implements IEnquirer {
 
     IResponder responder;
-    /* Refazer para que ele descubra a saida automaticamente,
-     * ele pergunta para o responder e movera o responder
-     */
+    
     public void connect(IResponder responder) {
         this.responder = responder;
     }

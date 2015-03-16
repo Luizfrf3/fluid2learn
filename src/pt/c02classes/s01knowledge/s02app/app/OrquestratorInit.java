@@ -24,6 +24,7 @@ public class OrquestratorInit {
 		IResponder resp;
 		IStatistics stat;
 
+		/* Pergunta o jogo e o animal ou labirinto para adivinhar ou encontrar a saida */
 		System.out.print("Jogar (A)nimals, (M)aze, ou (S)air? ");
 		String jogo = teclado.nextLine();
 		while(!jogo.equalsIgnoreCase("S")) {
