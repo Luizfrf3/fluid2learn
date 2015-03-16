@@ -63,7 +63,9 @@ public class EnquirerMaze implements IEnquirer {
             	 */
                 /* Tira a posição atual da pilha */
                 caminho.pop();
-                /* Checa se ainda há o que tirar da pilha */
+                /* Checa se ainda há o que tirar da pilha; se não há,
+                 * significa que o labirinto nao tem saida
+                 */
                 if (caminho.empty()) {
                     saida = false;
                 } else {
@@ -91,6 +93,7 @@ public class EnquirerMaze implements IEnquirer {
         while (!caminho.empty()) {
         	caminho.pop();
         }
+        
         return saida;
     }
 
