@@ -221,6 +221,9 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_RLQEUNFzEeS9I4csNlJjSg" name="ResponderBlackJack">
     <generalization xmi:type="uml:Generalization" xmi:id="_1gL2ANFzEeS9I4csNlJjSg" general="_ciCrwM5lEeS4xZWOGAcAew"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_vfS0INF_EeSeHsfgRDAWYw" name="jogadores[]" visibility="private" type="_mEw98NGAEeSeHsfgRDAWYw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gRlfkNGaEeSnr-Ob7y5tZQ" name="baralho[]" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_dQ5AcNFzEeS9I4csNlJjSg" name="&lt;&lt;constructor>>ResponderBlackJack" concurrency="concurrent">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_dQ5AcdFzEeS9I4csNlJjSg" name="estatisticas" type="_yCqNMM5oEeS4xZWOGAcAew"/>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_dQ5ActFzEeS9I4csNlJjSg" name="jogadores">
@@ -243,6 +246,13 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_8EmwANGZEeSnr-Ob7y5tZQ" name="getPlayer">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_KK7xgNGaEeSnr-Ob7y5tZQ" name="posicao">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Su7y4NGaEeSnr-Ob7y5tZQ" type="_mEw98NGAEeSeHsfgRDAWYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_l0IssNGbEeSnr-Ob7y5tZQ" name="embaralha"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_mEw98NGAEeSeHsfgRDAWYw" name="Player" visibility="public">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_mNDsYNGCEeSeHsfgRDAWYw" name="cartas[]" visibility="private">
@@ -250,6 +260,12 @@
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_yfoRQNGCEeSeHsfgRDAWYw" name="dinheiro" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ktZyUNGUEeSnr-Ob7y5tZQ" name="cartas_split[]" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2bZPUNGaEeSnr-Ob7y5tZQ" name="estado" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_K1JqoNGDEeSeHsfgRDAWYw" name="&lt;&lt;constructor>>Player" visibility="public">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_9ZYzoNGDEeSeHsfgRDAWYw" name="dinheiro">
@@ -262,8 +278,19 @@
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-nHgINGFEeSeHsfgRDAWYw" name="setDinheiro" visibility="public">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Nl3XYNGGEeSeHsfgRDAWYw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Nl3XYNGGEeSeHsfgRDAWYw" name="dinheiro">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_oViu8NGaEeSnr-Ob7y5tZQ" name="imprimeCartas"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-5sRUNGaEeSnr-Ob7y5tZQ" name="getEstado">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_CxVRQNGbEeSnr-Ob7y5tZQ" name="" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GCW9INGbEeSnr-Ob7y5tZQ" name="setEstado">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_JojAsNGbEeSnr-Ob7y5tZQ" name="estado">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
   </packagedElement>
