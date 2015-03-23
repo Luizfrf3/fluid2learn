@@ -76,6 +76,10 @@
           <element xmi:type="uml:Operation" href="enquirer-responder.uml#__SfIsM5hEeS4xZWOGAcAew"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="__Sg94c5hEeS4xZWOGAcAew"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_T5reENDyEeSvlJrPPtTwvA" type="3013">
+          <element xmi:type="uml:Operation" href="enquirer-responder.uml#_T1p5sNDyEeSvlJrPPtTwvA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_T5reEdDyEeSvlJrPPtTwvA"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_OlttF85gEeS4xZWOGAcAew"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_OlttGM5gEeS4xZWOGAcAew"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_OlttGc5gEeS4xZWOGAcAew"/>
