@@ -429,6 +429,10 @@
           <element xmi:type="uml:Property" href="enquirer-responder.uml#_2bZPUNGaEeSnr-Ob7y5tZQ"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_2badcdGaEeSnr-Ob7y5tZQ"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_IxUssNG6EeS_VLpZxCagEQ" type="3012">
+          <element xmi:type="uml:Property" href="enquirer-responder.uml#_IxOmENG6EeS_VLpZxCagEQ"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_IxUssdG6EeS_VLpZxCagEQ"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_mEzaNNGAEeSeHsfgRDAWYw"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_mEzaNdGAEeSeHsfgRDAWYw"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_mEzaNtGAEeSeHsfgRDAWYw"/>
@@ -462,6 +466,10 @@
           <element xmi:type="uml:Operation" href="enquirer-responder.uml#_GCW9INGbEeSnr-Ob7y5tZQ"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_GCXkMdGbEeSnr-Ob7y5tZQ"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_EWpGkNG5EeS_VLpZxCagEQ" type="3013">
+          <element xmi:type="uml:Operation" href="enquirer-responder.uml#_EL85gNG5EeS_VLpZxCagEQ"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_EWpGkdG5EeS_VLpZxCagEQ"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_mE0BQdGAEeSeHsfgRDAWYw"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_mE0BQtGAEeSeHsfgRDAWYw"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_mE0BQ9GAEeSeHsfgRDAWYw"/>
@@ -474,7 +482,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mE0BSdGAEeSeHsfgRDAWYw"/>
       </children>
       <element xmi:type="uml:Class" href="enquirer-responder.uml#_mEw98NGAEeSeHsfgRDAWYw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mEyzIdGAEeSeHsfgRDAWYw" x="1438" y="15" width="253" height="200"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mEyzIdGAEeSeHsfgRDAWYw" x="1438" y="6" width="286" height="230"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_93CtIc5bEeSWBIPKFzzKbg" name="diagram_compatibility_version" stringValue="1.0.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_93CtIs5bEeSWBIPKFzzKbg"/>
