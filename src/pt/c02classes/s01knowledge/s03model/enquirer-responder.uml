@@ -296,6 +296,10 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_EL85gNG5EeS_VLpZxCagEQ" name="contaCarta"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_EL85gNG5EeS_VLpZxCagEQ" name="contaCarta">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_dNAP0NJAEeSxVuIkB2m9JA" name="carta">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedParameter>
+    </ownedOperation>
   </packagedElement>
 </uml:Model>
