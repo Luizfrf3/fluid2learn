@@ -300,6 +300,9 @@
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_dNAP0NJAEeSxVuIkB2m9JA" name="carta">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
       </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_6-hbANJEEeS2wpxcAdpnLg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedParameter>
     </ownedOperation>
   </packagedElement>
 </uml:Model>
