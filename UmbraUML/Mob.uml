@@ -11,7 +11,15 @@
   <packagedElement xmi:type="uml:Interface" xmi:id="_td6MsN7cEeSLRb6bidoM_g" name="IPessoa"/>
   <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_zyS74N7cEeSLRb6bidoM_g" name="Realization0" client="_vDJFIN7cEeSLRb6bidoM_g" supplier="_td6MsN7cEeSLRb6bidoM_g" contract="_td6MsN7cEeSLRb6bidoM_g"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_TNNDkN7dEeSLRb6bidoM_g" name="Item">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_yApioN7dEeSLRb6bidoM_g" name="Modificadores" visibility="private"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yApioN7dEeSLRb6bidoM_g" name="modificadores" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gipWgN7kEeSLRb6bidoM_g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_girLsN7kEeSLRb6bidoM_g" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PtlBYN7lEeSLRb6bidoM_g" name="nome" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TXkm4N7lEeSLRb6bidoM_g" name="descricao" visibility="private"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_EEBzEN7fEeSLRb6bidoM_g" name="IModificador">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_rHqUwN7hEeSLRb6bidoM_g" name="Modificar"/>
@@ -23,5 +31,15 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_KXmikN7iEeSLRb6bidoM_g" name="Monstro">
     <generalization xmi:type="uml:Generalization" xmi:id="_HTWR8N7jEeSLRb6bidoM_g" general="_AZhI0N7iEeSLRb6bidoM_g"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_WdzfYN7iEeSLRb6bidoM_g" name="Inventario"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WdzfYN7iEeSLRb6bidoM_g" name="Inventario">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vplrAN7lEeSLRb6bidoM_g" name="tamanho" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_nghuoN7kEeSLRb6bidoM_g" name="dropItem">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_DyBY4N7mEeSLRb6bidoM_g" name="return" type="_TNNDkN7dEeSLRb6bidoM_g" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_xLHvMN7lEeSLRb6bidoM_g" name="adItem">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_0SDq8N7lEeSLRb6bidoM_g" name="item" type="_TNNDkN7dEeSLRb6bidoM_g"/>
+    </ownedOperation>
+  </packagedElement>
 </uml:Model>
