@@ -325,7 +325,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ai9FUt_yEeSzVePeDXeU8Q"/>
       </children>
       <element xmi:type="uml:Interface" href="Mob.uml#_ai9FQN_yEeSzVePeDXeU8Q"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ai9FQt_yEeSzVePeDXeU8Q" x="444" y="268" width="65" height="67"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ai9FQt_yEeSzVePeDXeU8Q" x="410" y="298" width="65" height="67"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_cJmS8N_yEeSzVePeDXeU8Q" type="2004">
       <children xmi:type="notation:DecorationNode" xmi:id="_cJmS8t_yEeSzVePeDXeU8Q" type="5011"/>
