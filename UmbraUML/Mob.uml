@@ -50,9 +50,6 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nvhr0ODEEeSuocFuFUAVcw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nviS4ODEEeSuocFuFUAVcw" value="1"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_3Kl8cN_kEeSzVePeDXeU8Q" name="attack">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_AYX6oN_lEeSzVePeDXeU8Q" name="enemy" type="_AZhI0N7iEeSLRb6bidoM_g"/>
-    </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_o_zl0N_xEeSzVePeDXeU8Q" name="getAtt">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_uw5asN_xEeSzVePeDXeU8Q" name="type">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>

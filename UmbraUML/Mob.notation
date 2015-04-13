@@ -83,10 +83,6 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AZiW-d7iEeSLRb6bidoM_g"/>
       </children>
       <children xmi:type="notation:BasicCompartment" xmi:id="_AZi-AN7iEeSLRb6bidoM_g" type="7018">
-        <children xmi:type="notation:Shape" xmi:id="_3QZpgN_kEeSzVePeDXeU8Q" type="3013">
-          <element xmi:type="uml:Operation" href="Mob.uml#_3Kl8cN_kEeSzVePeDXeU8Q"/>
-          <layoutConstraint xmi:type="notation:Location" xmi:id="_3QZpgd_kEeSzVePeDXeU8Q"/>
-        </children>
         <children xmi:type="notation:Shape" xmi:id="_o_zl0d_xEeSzVePeDXeU8Q" type="3013">
           <element xmi:type="uml:Operation" href="Mob.uml#_o_zl0N_xEeSzVePeDXeU8Q"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_o_zl0t_xEeSzVePeDXeU8Q"/>
