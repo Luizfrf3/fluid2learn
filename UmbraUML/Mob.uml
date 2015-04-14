@@ -586,7 +586,7 @@
     <ownedAttribute xmi:type="uml:Port" xmi:id="_w_-zIOI7EeSvKt0jd7F3BQ" name="Mob" type="_XNyZkN7cEeSLRb6bidoM_g" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_EVjgsOI8EeSvKt0jd7F3BQ" name="rPosition" type="_RaszMN_lEeSzVePeDXeU8Q" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_4FJ0IOI9EeSvKt0jd7F3BQ" name="rAttribute" type="_BJ_LgN_qEeSzVePeDXeU8Q" aggregation="composite"/>
-    <ownedAttribute xmi:type="uml:Port" xmi:id="_niJC4OI_EeSvKt0jd7F3BQ" name="IInventory" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_niJC4OI_EeSvKt0jd7F3BQ" name="rInventory" aggregation="composite"/>
     <ownedConnector xmi:type="uml:Connector" xmi:id="_uMC0QOItEeSvKt0jd7F3BQ" name="Connector1">
       <end xmi:type="uml:ConnectorEnd" xmi:id="_uMDbUOItEeSvKt0jd7F3BQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uMDbUeItEeSvKt0jd7F3BQ" value="1"/>
@@ -600,7 +600,6 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_R1xgEOIeEeSHIv4k7YqOUg" name="ItemComponent">
     <ownedAttribute xmi:type="uml:Port" xmi:id="_kZujcOIeEeSHIv4k7YqOUg" name="Item" aggregation="composite"/>
-    <ownedAttribute xmi:type="uml:Port" xmi:id="_J2PpcOI5EeSvKt0jd7F3BQ" name="rAttribute" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_XmD9gOI7EeSvKt0jd7F3BQ" name="rAttribute" type="_BJ_LgN_qEeSzVePeDXeU8Q" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_D6GzcOI_EeSvKt0jd7F3BQ" name="Item" type="_2SplcN-wEeSH_u4oe_L7JQ" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_OtXsQOJAEeSvKt0jd7F3BQ" name="rModAtt" aggregation="composite"/>
@@ -622,7 +621,6 @@
     <ownedAttribute xmi:type="uml:Port" xmi:id="_iP5ioOI-EeSvKt0jd7F3BQ" name="rItem" type="_2SplcN-wEeSH_u4oe_L7JQ" aggregation="composite"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_5cU0sOI4EeSvKt0jd7F3BQ" name="Usage2" client="_qXMooOI4EeSvKt0jd7F3BQ" supplier="_BJ_LgN_qEeSzVePeDXeU8Q"/>
-  <packagedElement xmi:type="uml:Usage" xmi:id="_P9150OI5EeSvKt0jd7F3BQ" name="Usage3" client="_J2PpcOI5EeSvKt0jd7F3BQ" supplier="_BJ_LgN_qEeSzVePeDXeU8Q"/>
   <packagedElement xmi:type="uml:Component" xmi:id="_YN3PQOI5EeSvKt0jd7F3BQ" name="ModAttComponent">
     <ownedAttribute xmi:type="uml:Port" xmi:id="_n009EOI5EeSvKt0jd7F3BQ" name="ModAtt" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_vKRgoOI5EeSvKt0jd7F3BQ" name="rAttribute" aggregation="composite"/>
