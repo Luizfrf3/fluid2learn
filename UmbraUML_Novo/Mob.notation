@@ -2626,6 +2626,15 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2RSxEPwsEeS0jdHE8kZ-_g" id="(0.28762541806020064,0.020134228187919462)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QBzhwPwtEeS0jdHE8kZ-_g" id="(0.5757575757575758,0.9380530973451328)"/>
     </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_j66UAPxKEeS5ruZjzJ_BbQ" type="4002" source="_4h6icN_pEeSzVePeDXeU8Q" target="_A2HP8PwHEeS0jdHE8kZ-_g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_j667EPxKEeS5ruZjzJ_BbQ" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_j667EfxKEeS5ruZjzJ_BbQ" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_j66UAfxKEeS5ruZjzJ_BbQ"/>
+      <element xmi:type="uml:Generalization" href="Mob.uml#_j2siYPxKEeS5ruZjzJ_BbQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_j66UAvxKEeS5ruZjzJ_BbQ" points="[12, -14, -1543, 1513]$[12, -744, -1543, 783]$[172, -744, -1383, 783]$[172, -1462, -1383, 65]$[1546, -1462, -9, 65]$[1546, -1478, -9, 49]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_j7BBsPxKEeS5ruZjzJ_BbQ" id="(0.8492063492063492,0.11304347826086956)"/>
+    </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_6UbBkN7bEeSLRb6bidoM_g" type="PapyrusUMLComponentDiagram" name="Mob" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_1Kg48Pd7EeSysbfCl0ys7Q" type="2002">
