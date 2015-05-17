@@ -1319,7 +1319,14 @@
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_ymCxsPwIEeS0jdHE8kZ-_g" name="return" type="_tqLUoPwIEeS0jdHE8kZ-_g" direction="return"/>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Enumeration" xmi:id="_tqLUoPwIEeS0jdHE8kZ-_g" name="Type"/>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_tqLUoPwIEeS0jdHE8kZ-_g" name="Type">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JoNwMPwyEeS0jdHE8kZ-_g" name="MONSTRO"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UzQFQPwyEeS0jdHE8kZ-_g" name="PLAYER"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_V9bZYPwyEeS0jdHE8kZ-_g" name="ITEM"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XIEnkPwyEeS0jdHE8kZ-_g" name="ITEM_BATTLE"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YaTEcPwyEeS0jdHE8kZ-_g" name="ITEM_ILUMINATION"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_aVipIPwyEeS0jdHE8kZ-_g" name="ITEM_PUZZLE"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_lD3JoPwJEeS0jdHE8kZ-_g" name="IItemGeneric">
     <generalization xmi:type="uml:Generalization" xmi:id="_3BvrgPwJEeS0jdHE8kZ-_g" general="_De_TgPwDEeS0jdHE8kZ-_g"/>
     <generalization xmi:type="uml:Generalization" xmi:id="_38y-gPwJEeS0jdHE8kZ-_g" general="_2k43wPwGEeS0jdHE8kZ-_g"/>
