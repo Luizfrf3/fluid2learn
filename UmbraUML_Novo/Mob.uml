@@ -754,6 +754,7 @@
     <ownedAttribute xmi:type="uml:Port" xmi:id="_p1FLIPgSEeSOu_uahZAwpQ" name="MobManager" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_tHqgwPgTEeSOu_uahZAwpQ" name="inventory" type="_oMNiIPgNEeSOu_uahZAwpQ"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_p0258PgYEeSw286TJ_t14w" name="Item" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_5x940P2oEeS-SrxPpF3ofA" name="Mob" aggregation="composite"/>
     <ownedConnector xmi:type="uml:Connector" xmi:id="_cLxnYPgTEeSOu_uahZAwpQ" name="Connector1">
       <end xmi:type="uml:ConnectorEnd" xmi:id="_cLyOcPgTEeSOu_uahZAwpQ" partWithPort="_ks9awPgSEeSOu_uahZAwpQ" role="_XoiswPgTEeSOu_uahZAwpQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cLyOcfgTEeSOu_uahZAwpQ" value="1"/>
@@ -824,6 +825,16 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yB-sZfgYEeSw286TJ_t14w" value="1"/>
       </end>
     </ownedConnector>
+    <ownedConnector xmi:type="uml:Connector" xmi:id="_CfH2MP2pEeS-SrxPpF3ofA" name="Connector8">
+      <end xmi:type="uml:ConnectorEnd" xmi:id="_CfIdQP2pEeS-SrxPpF3ofA" partWithPort="_ks9awPgSEeSOu_uahZAwpQ" role="_wyPkwP2oEeS-SrxPpF3ofA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CfIdQf2pEeS-SrxPpF3ofA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CfIdQv2pEeS-SrxPpF3ofA" value="1"/>
+      </end>
+      <end xmi:type="uml:ConnectorEnd" xmi:id="_CfIdQ_2pEeS-SrxPpF3ofA" partWithPort="_ks9awPgSEeSOu_uahZAwpQ" role="_5x940P2oEeS-SrxPpF3ofA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CfIdRP2pEeS-SrxPpF3ofA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CfIdRf2pEeS-SrxPpF3ofA" value="1"/>
+      </end>
+    </ownedConnector>
     <packagedElement xmi:type="uml:Component" xmi:id="_nyKf4PgMEeSOu_uahZAwpQ" name="Inventory">
       <ownedAttribute xmi:type="uml:Port" xmi:id="_p39uwPgMEeSOu_uahZAwpQ" name="Inventory" aggregation="composite"/>
     </packagedElement>
@@ -841,7 +852,7 @@
     <ownedAttribute xmi:type="uml:Port" xmi:id="_FVe5cPeBEeSysbfCl0ys7Q" name="rMobGeneric" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_0h8EgPgUEeSOu_uahZAwpQ" name="ItemManager" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_-U_dgPgVEeSOu_uahZAwpQ" name="itemManager" type="_1o960PgQEeSOu_uahZAwpQ"/>
-    <ownedAttribute xmi:type="uml:Port" xmi:id="_HMracPgXEeSOu_uahZAwpQ" name="rPlayer" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_HMracPgXEeSOu_uahZAwpQ" name="rMob" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_4E2JkPgfEeSw286TJ_t14w" name="modAtt" type="_N49dgPgdEeSw286TJ_t14w"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_XNmxUPggEeSw286TJ_t14w" name="rAttribute" aggregation="composite"/>
     <ownedConnector xmi:type="uml:Connector" xmi:id="_rodQcPgWEeSOu_uahZAwpQ" name="Connector1">
@@ -977,6 +988,7 @@
     <ownedAttribute xmi:type="uml:Port" xmi:id="_Dk7YAPgUEeSOu_uahZAwpQ" name="rInventory" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_bbnuEPgZEeSw286TJ_t14w" name="rInventory" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_SkDBsPgfEeSw286TJ_t14w" name="rAttribute" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_wyPkwP2oEeS-SrxPpF3ofA" name="Mob" aggregation="composite"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_aKKHMPgOEeSOu_uahZAwpQ" name="IMobManager">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_6wEYkPwjEeS0jdHE8kZ-_g" name="createPlayer">
@@ -1047,7 +1059,7 @@
     <ownedAttribute xmi:type="uml:Port" xmi:id="_kvZt8PgWEeSOu_uahZAwpQ" name="ItemPuzzle" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_nQkqMPgWEeSOu_uahZAwpQ" name="ItemIlumination" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_78xzgPgWEeSOu_uahZAwpQ" name="rPosition" aggregation="composite"/>
-    <ownedAttribute xmi:type="uml:Port" xmi:id="_D5X2oPgXEeSOu_uahZAwpQ" name="rPlayer" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_D5X2oPgXEeSOu_uahZAwpQ" name="rMob" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_1PJ9kPgZEeSw286TJ_t14w" name="rPosition" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_0YjokPggEeSw286TJ_t14w" name="rModAttManager" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_3sEnwPggEeSw286TJ_t14w" name="rModAtt" aggregation="composite"/>
@@ -1745,6 +1757,8 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xHQ8M_wsEeS0jdHE8kZ-_g" value="1"/>
     </ownedEnd>
   </packagedElement>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_BI_wwP2pEeS-SrxPpF3ofA" name="Realization101111111111111111111111" client="_5x940P2oEeS-SrxPpF3ofA" supplier="_XNyZkN7cEeSLRb6bidoM_g" contract="_XNyZkN7cEeSLRb6bidoM_g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_JATEMP2pEeS-SrxPpF3ofA" name="Usage1011111111111111" client="_HMracPgXEeSOu_uahZAwpQ" supplier="_XNyZkN7cEeSLRb6bidoM_g"/>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_OdTbsN_qEeSzVePeDXeU8Q">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Od5RkN_qEeSzVePeDXeU8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_sYse0YZLEeKyw49uR6nx3g"/>
