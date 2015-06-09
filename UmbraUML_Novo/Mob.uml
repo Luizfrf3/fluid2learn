@@ -756,6 +756,7 @@
     <ownedAttribute xmi:type="uml:Port" xmi:id="_p0258PgYEeSw286TJ_t14w" name="Item" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_5x940P2oEeS-SrxPpF3ofA" name="Mob" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_KWcUkA68EeWx-Mhj_CJWKQ" name="riDB" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_YNSkEA7GEeWCT5uAb4EtdA" name="rItemManager" aggregation="composite"/>
     <ownedConnector xmi:type="uml:Connector" xmi:id="_cLxnYPgTEeSOu_uahZAwpQ" name="Connector1">
       <end xmi:type="uml:ConnectorEnd" xmi:id="_cLyOcPgTEeSOu_uahZAwpQ" partWithPort="_ks9awPgSEeSOu_uahZAwpQ" role="_XoiswPgTEeSOu_uahZAwpQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cLyOcfgTEeSOu_uahZAwpQ" value="1"/>
@@ -844,6 +845,16 @@
       <end xmi:type="uml:ConnectorEnd" xmi:id="_WDM2ow68EeWx-Mhj_CJWKQ" partWithPort="_ks9awPgSEeSOu_uahZAwpQ" role="_KWcUkA68EeWx-Mhj_CJWKQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WDM2pA68EeWx-Mhj_CJWKQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WDM2pQ68EeWx-Mhj_CJWKQ" value="1"/>
+      </end>
+    </ownedConnector>
+    <ownedConnector xmi:type="uml:Connector" xmi:id="_ew9FYA7GEeWCT5uAb4EtdA" name="Connector10">
+      <end xmi:type="uml:ConnectorEnd" xmi:id="_ew9scA7GEeWCT5uAb4EtdA" partWithPort="_ks9awPgSEeSOu_uahZAwpQ" role="_cjERgA7GEeWCT5uAb4EtdA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ew9scQ7GEeWCT5uAb4EtdA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ew9scg7GEeWCT5uAb4EtdA" value="1"/>
+      </end>
+      <end xmi:type="uml:ConnectorEnd" xmi:id="_ew9scw7GEeWCT5uAb4EtdA" partWithPort="_ks9awPgSEeSOu_uahZAwpQ" role="_YNSkEA7GEeWCT5uAb4EtdA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ew9sdA7GEeWCT5uAb4EtdA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ew9sdQ7GEeWCT5uAb4EtdA" value="1"/>
       </end>
     </ownedConnector>
     <packagedElement xmi:type="uml:Component" xmi:id="_nyKf4PgMEeSOu_uahZAwpQ" name="Inventory">
@@ -1013,6 +1024,8 @@
     <ownedAttribute xmi:type="uml:Port" xmi:id="_wyPkwP2oEeS-SrxPpF3ofA" name="Mob" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_Sg5NgA68EeWx-Mhj_CJWKQ" name="riDB" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_otsm4A68EeWx-Mhj_CJWKQ" name="riDB" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_cjERgA7GEeWCT5uAb4EtdA" name="rItemManager" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_0kH2wA7GEeWCT5uAb4EtdA" name="rItemManager" aggregation="composite"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_aKKHMPgOEeSOu_uahZAwpQ" name="IMobManager">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_6wEYkPwjEeS0jdHE8kZ-_g" name="createPlayer">
@@ -1790,6 +1803,8 @@
   <packagedElement xmi:type="uml:Usage" xmi:id="_jPobsA68EeWx-Mhj_CJWKQ" name="Usage101111111111111111" client="_YeJ2IA68EeWx-Mhj_CJWKQ" supplier="_Bama8A68EeWx-Mhj_CJWKQ"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_usncYA68EeWx-Mhj_CJWKQ" name="Usage1011111111111111111" client="_otsm4A68EeWx-Mhj_CJWKQ" supplier="_Bama8A68EeWx-Mhj_CJWKQ"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_9LlAUA68EeWx-Mhj_CJWKQ" name="Usage10111111111111111111" client="_066xsA68EeWx-Mhj_CJWKQ" supplier="_Bama8A68EeWx-Mhj_CJWKQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_sBP2wA7GEeWCT5uAb4EtdA" name="Usage101111111111111111111" client="_YNSkEA7GEeWCT5uAb4EtdA" supplier="_QYeVQPgPEeSOu_uahZAwpQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_6zVyEA7GEeWCT5uAb4EtdA" name="Usage1011111111111111111111" client="_0kH2wA7GEeWCT5uAb4EtdA" supplier="_QYeVQPgPEeSOu_uahZAwpQ"/>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_OdTbsN_qEeSzVePeDXeU8Q">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Od5RkN_qEeSzVePeDXeU8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_sYse0YZLEeKyw49uR6nx3g"/>
